@@ -15,7 +15,7 @@ const Ref = () => {
     renderCount.current = renderCount.current + 1;
   });
 
-  // 2. Another practice of ref-hook is to REFER TO DOM ELEMENTS
+  // 2. Another practice of ref-hook is to REFER TO DOM ELEMENTS, just like querySelector()
   const inputRef = useRef();
 
   function focus() {
@@ -40,7 +40,7 @@ const Ref = () => {
       <input
         ref={inputRef} // create a reference to input element
         type="text"
-        onChange={(e) => setName(e.target.value)}
+        onChange={e => setName(e.target.value)}
       />
       <div>My name is {name}</div>
       <div>My name used to be {previousName.current}</div>
