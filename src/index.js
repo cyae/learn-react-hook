@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import State from "./State";
 import Effect from "./Effect";
 import Memo from "./Memo";
